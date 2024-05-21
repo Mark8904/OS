@@ -33,12 +33,12 @@ void main() {
                 temp = b[j] - f[i];
                 if (temp >= 0) {
                     ff[i] = j;
-                    frag[i] = temp;
-                    bf[j] = 1;
                     break;
                 }
             }
         }
+        frag[i] = temp;
+                    bf[ff[i]] = 1;
     }
 
     printf("\nFile_no:\tFile_size:\tBlock_no:\tBlock_size:\tFragment");
